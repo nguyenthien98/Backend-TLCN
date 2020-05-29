@@ -1,0 +1,49 @@
+{
+  "name": "datn_backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./bin/backend.js",
+    "heroku-prebuild": "export NPM_CONFIG_PRODUCTION=false; export NODE_ENV=; NPM_CONFIG_PRODUCTION=false NODE_ENV=development npm install --only=dev --dev",
+    "heroku-postbuild": "export NPM_CONFIG_PRODUCTION=true; export NODE_ENV=production;"
+  },
+  "keywords": [
+    "example",
+    "heroku"
+  ],
+  "author": "dattran",
+  "engines": {
+    "nodemon": "10.16.0",
+    "npm": "6.9.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "bcrypt": "^3.0.6",
+    "body-parser": "^1.19.0",
+    "cloudinary": "^1.14.0",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.5",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "express-session": "^1.16.2",
+    "fs": "0.0.1-security",
+    "google-distance": "^1.0.1",
+    "http-errors": "~1.6.2",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.7",
+    "mongoose": "^5.6.3",
+    "morgan": "^1.9.1",
+    "nodemailer": "^6.2.1",
+    "passport": "^0.4.0",
+    "passport-google-token": "^0.1.2",
+    "paypal-rest-sdk": "^1.8.1",
+    "pug": "^2.0.4",
+    "socket.io": "^2.2.0",
+    "swagger-ui-express": "^4.0.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
